@@ -1,0 +1,63 @@
+﻿@page
+@model Hilton_Hotels.Pages.Booking.UpdateBookingModel
+@{
+}
+<div class="container border" style="padding:20px">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="UpdateBooking.ID"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="UpdateBooking.ID" class="form-control" readonly/>
+            </div>
+            <span class="text-danger" asp-validation-for="UpdateBooking.ID"></span>
+        </div>
+           
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="UpdateBooking.CheckIn"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="UpdateBooking.CheckIn" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="UpdateBooking.CheckIn"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="UpdateBooking.CheckOut"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="UpdateBooking.CheckOut" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="UpdateBooking.CheckOut"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="UpdateBooking.CustomerUser"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="UpdateBooking.CustomerUser" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="UpdateBooking.CustomerUser"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="UpdateBooking.RooomeId"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="UpdateBooking.RooomeId" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="UpdateBooking.RooomeId"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <input type="submit" class="btn btn-primary" value="UpdateBooking" />
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </form>
+</div>

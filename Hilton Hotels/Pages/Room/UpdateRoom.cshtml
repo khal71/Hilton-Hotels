@@ -1,0 +1,46 @@
+﻿@page
+@model Hilton_Hotels.Pages.Room.UpdateRoomModel
+@{
+}
+<div class="container border" style="padding:20px">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="UpdateRoom.ID"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="UpdateRoom.ID" class="form-control" readonly />
+            </div>
+            <span class="text-danger" asp-validation-for="UpdateRoom.ID"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="UpdateRoom.Type"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="UpdateRoom.Type" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="UpdateRoom.Type"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="UpdateRoom.Price"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="UpdateRoom.Price" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="UpdateRoom.Price"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <input type="submit" class="btn btn-primary" value="UpdateRoom" />
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </form>
+</div>

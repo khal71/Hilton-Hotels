@@ -1,0 +1,45 @@
+﻿@page
+@model Hilton_Hotels.Pages.Room.CreateRoomModel
+@{
+}
+<div class="container border" style="padding:20px">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Create.ID"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Create.ID" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Create.ID"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Create.Type"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Create.Type" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Create.Type"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Create.Price"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Create.Price" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Create.Price"></span>
+        </div>
+        
+        <div class="form-group row">
+            <div class="col-2">
+                <input type="submit" class="btn btn-primary" value="CreateRoom" />
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </form>
+</div>

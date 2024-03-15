@@ -1,0 +1,77 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Hilton";
+}
+<head>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+
+
+
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!--here are the Indicators/dots (Khaled) -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+
+  <!-- The slideshow/carousel (Khaled)-->
+  <div class="carousel-inner mb">
+    <div class="carousel-item active">
+            <img src="~/images/h1.webp"  alt="Hilton Dubai" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+            <img src="~/images/h2.webp"  alt="Hilton Dubai" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+            <img src="~/images/h3.webp"  alt="Hilton Dubai" class="d-block w-100">
+    </div>
+        <div class="carousel-item">
+            <img src="~/images/H4.webp"  alt="Hilton Dubai" class="d-block w-100">
+        </div>
+  </div>
+
+  <!-- Left and right controls/icons (Khaled)-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<!--this is for the cards with css (Jakob)-->
+<div class="wrapper">
+    <h1>Hilton Dubai</h1>
+    <div class="image i1"></div>
+    <div class="details">
+        <h1><em>Suit</em></h1>
+        <h2>Hilton</h2>
+        <p>3 Days - 2 Nights</p>
+    </div>
+    <h1>£750</h1>
+</div>
+<div class="wrapper">
+    <h1>Hilton Dubai</h1>
+    <div class="image i2"></div>
+    <div class="details">
+        <h1><em>Delux Room</em></h1>
+        <h2>Hilton</h2>
+        <p>3 Days - 2 Nights</p>
+    </div>
+    <h1>£550</h1>
+</div>
+<div class="wrapper">
+    <h1>Hilton Dubai</h1>
+    <div class="image i3"></div>
+    <div class="details">
+        <h1><em>2 Beds room</em></h1>
+        <h2>Hilton</h2>
+        <p>3 Days - 2 Nights</p>
+    </div>
+    <h1>£450</h1>
+</div>

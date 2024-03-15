@@ -1,0 +1,62 @@
+﻿@page
+@model Hilton_Hotels.Pages.Booking.BookingPageModel
+@{
+}
+<div class="container border" style="padding:20px">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Booking.ID"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Booking.ID" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Booking.ID"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Booking.CheackIn"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Booking.CheackIn" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Booking.CheackIn"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Booking.CheackOut"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Booking.CheackOut" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Booking.CheackOut"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Booking.CustomerUser"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Booking.CustomerUser" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Booking.CustomerUser"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="Booking.RoomeId"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="Booking.RoomeId" class="form-control" />
+            </div>
+            <span class="text-danger" asp-validation-for="Booking.RoomeId"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <input type="submit" class="btn btn-primary" value="RegisterBooking" />
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </form>
+</div>

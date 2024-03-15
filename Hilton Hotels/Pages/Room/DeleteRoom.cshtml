@@ -1,0 +1,45 @@
+﻿@page
+@model Hilton_Hotels.Pages.Room.DeleteRoomModel
+@{
+}
+<div class="container border" style="padding:20px">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="RemoveRoom.ID"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="RemoveRoom.ID" class="form-control" disabled />
+            </div>
+            <span class="text-danger" asp-validation-for="RemoveRoom.ID"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="RemoveRoom.Type"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="RemoveRoom.Type" class="form-control" disabled />
+            </div>
+            <span class="text-danger" asp-validation-for="RemoveRoom.Type"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <label asp-for="RemoveRoom.Price"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="RemoveRoom.Price" class="form-control" disabled />
+            </div>
+            <span class="text-danger" asp-validation-for="RemoveRoom.Price"></span>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-2">
+                <input type="submit" class="btn btn-primary" value="DeleteRoom" />
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,71 @@
+﻿@page
+@model Hilton_Hotels.Pages.Room.IndexRoomModel
+@{
+}
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>TYPE</th>
+                <th>PRICE</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.RoomModels.Count == 0)
+            {
+                <p>Empty list</p>
+            }
+            else
+            {
+                @foreach (var p in Model.RoomModels)
+                {
+
+
+
+                    <tr>
+                        <td>@p.ID</td>
+                        <td>@p.Type</td>
+                        <td>@p.Price</td>
+                        <td><a asp-page="DeleteRoom" asp-route-id="@p.ID">Delete</a></td>
+                        <td><a asp-page="UpdateRoom" asp-route-id="@p.ID">Update</a></td>
+                    </tr>
+                }
+            }
+
+
+
+        </tbody>
+    </table>
+    <form method="post">
+        <div class="form-group row">
+            <div class="col-2">
+                <input type="submit" class="btn btn-primary" value="Create Room" />
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </form>
+    <form method="post" asp-page-handler="Booking">
+        <div class="form-group row">
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary">Booking</button>
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </form>
+
+    <form method="post" asp-page-handler="Customer">
+        <div class="form-group row">
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary">Customer</button>
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </form>
+
+
+</div>
